@@ -1,11 +1,1 @@
-amqp==1.4.9
-anyjson==0.3.3
-billiard==3.3.0.23
-celery==3.1.25
-celery-with-redis==3.0
 Django==1.10.5
-kombu==3.0.37
-pytz==2016.10
-redis==2.10.5
-unity-lens-photos==1.0
-vine==1.1.3
