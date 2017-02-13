@@ -1,0 +1,36 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ACE in Action</title>
+<style type="text/css" media="screen">
+   #editor1 {
+       height: 300px;
+       width:  500px;
+   }
+   #editor2 {
+       height: 300px;
+       width:  500px;
+   }
+</style>
+    <script src= "{% static 'hackIDE/ace-builds/src/ace.js' %}" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src= "{% static 'js/main.js' %}" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body>
+
+<input type ="button" onclick="location.href = '/strategy';" value="回到上一頁"></input>
+<h3 class="panel-title">Strategy Editor</h3>
+<input class="Strategy-name" type="text" placeholder="Strategy Name">
+<div id="editor1"></div>
+
+ <!-- ****************************seperate********************* -->
+
+<h3 class="panel-title">Position Editor</h3>
+<div id="editor2"></div>
+
+<button class='btn save-strategy'>Save Strategy</button>
+<button class='btn run-strategy' >Run Strategy</button>
+</body>
+</html>

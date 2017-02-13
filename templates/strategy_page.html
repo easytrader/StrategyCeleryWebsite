@@ -1,0 +1,51 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ACE in Action</title>
+    <style type="text/css" media="screen">
+   #editor1 {
+       height: 300px;
+       width:  500px;
+   }
+   #editor2 {
+       height: 300px;
+       width:  500px;
+   }
+
+
+    </style>
+    <script src="{% static 'hackIDE/ace-builds/src/ace.js' %}" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="{% static 'js/strategy_page.js' %}" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body>
+
+<input type="button" onclick="location.href = '/strategy';" value="回到上一頁"></input>
+<h3 class="panel-title">Strategy Editor</h3>
+<h3>{{strategy.strategy_name}}</h3>
+<div id="editor1">{{strategy.strategy}}</div>
+
+
+<!-- ****************************seperate********************* -->
+
+<h3 class="panel-title">Position Editor</h3>
+<div id="editor2">{{strategy.position}}</div>
+
+<button class='btn save-strategy'>Save Strategy</button>
+<script>
+    var editor1 = ace.edit("editor1");
+    editor1.setTheme("ace/theme/twilight");
+    editor1.getSession().setMode("ace/mode/python");
+    editor1.setFontSize(15);
+
+    var editor2 = ace.edit("editor2");
+    editor2.setTheme("ace/theme/twilight");
+    editor2.getSession().setMode("ace/mode/python");
+    editor2.setFontSize(15);
+
+
+</script>
+</body>
+</html>

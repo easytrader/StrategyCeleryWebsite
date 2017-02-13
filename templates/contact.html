@@ -1,0 +1,26 @@
+<!-- contact.html (ch08www project) -->
+{% extends "base.html" %}
+{% block title %}連絡管理員{% endblock %}
+{% block content %}
+<div class='container'>
+    {% if message %}
+        <div class='alert alert-warning'>{{ message }}</div>
+    {% endif %}
+    <div class='panel panel-primary'>
+        <div class='panel-heading'>
+            <form name='my form' action='.' method='POST'>
+            {% csrf_token %}
+            <h3>寫信給管理員</h3>
+        </div>
+        <div class='panel-body'>
+            {{ form.as_p }}
+        </div>
+        <div class='panel-footer'>
+            <input type='submit' value='送出'>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+

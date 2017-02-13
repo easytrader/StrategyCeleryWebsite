@@ -1,0 +1,28 @@
+<!-- index.html (ch09www project) -->
+{% extends "base.html" %}
+{% block title %}分享日記{% endblock %}
+{% block content %}
+<div class='container'>
+    {% for message in messages %}
+    <div class='alert alert-{{message.tags}}'>{{ message }}</div>
+    {% endfor %}
+    <div class='row'>
+        <div class='col-md-12'>
+            <div class='panel panel-default'>
+                <div class='panel-heading' align=center>
+                    <h3>我的Strategy</h3>
+                </div>
+            </div>
+            <input type="button" value="New Strategy" onclick="location.href='/new_strategy'">
+            <input type="button" value="Del Strategy" class="del-strategy">
+            <br/>
+            {% for strategy in Strategies %}
+
+            <input type="checkbox" class="strategy_checkbox" value="{{strategy.id}}"/>
+            <a href="{% url 'strategy_page' strategy.id %}">{{strategy.strategy_name}}</a>
+            <br/>
+            {% endfor %}
+
+        </div>
+        {% endblock %}
+
