@@ -140,10 +140,19 @@ def strategy_run(request):
 
     if request.method == 'POST' and request.is_ajax():
         print("request.method == 'POST' and request.is_ajax()")
+        print(request.POST['strategy_content'])
         print("os.path.dirname")
         print(os.path.dirname(__file__))
         #os.path.join(os.path.dirname(__file__))
+        """"
+        f = open(os.path.dirname(__file__)+"/../qstrader/temp_strategy.py", 'w')
+        f.write(request.POST['strategy_content'])
+        f.close()
 
+        f = open(os.path.dirname(__file__) + "/../qstrader/temp_position.py", 'w')
+        f.write(request.POST['position_content'])
+        f.close()
+        """
         ## call date command ##
         p = subprocess.Popen("python " + os.path.dirname(__file__)+"/../qstrader/strategy_backtest.py", stdout=subprocess.PIPE, shell=True)
         (output, err) = p.communicate()
