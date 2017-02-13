@@ -25,6 +25,7 @@ def index(request, pid=None, del_pass=None):
     html = template.render(request_context)
     return HttpResponse(html)
 
+@csrf_exempt
 def login(request):
 
     if request.user.is_authenticated():
