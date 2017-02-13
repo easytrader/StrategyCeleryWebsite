@@ -10,6 +10,8 @@ from django.contrib import auth
 from .models import Strategy
 from django.views.decorators.csrf import csrf_exempt
 import json
+import subprocess
+import os
 
 # Create your views here.
 def index(request, pid=None, del_pass=None):
@@ -138,6 +140,18 @@ def strategy_run(request):
 
     if request.method == 'POST' and request.is_ajax():
         print("request.method == 'POST' and request.is_ajax()")
+        print("os.path.dirname")
+        print(os.path.dirname(__file__))
+        #os.path.join(os.path.dirname(__file__))
+
+        ## call date command ##
+        p = subprocess.Popen("python " + os.path.dirname(__file__)+"/../qstrader/web_buy_and_hold_backtest.py", stdout=subprocess.PIPE, shell=True)
+        (output, err) = p.communicate()
+        ## Wait for date to terminate. Get return returncode ##
+        p_status = p.wait()
+        print "Command output : ", output
+        print "Command exit status/return code : ", p_status
+
         return HttpResponse(json.dumps({'name': request.POST['strategy_content']}), content_type="application/json")
     else:
         print("!request.method == 'POST' and request.is_ajax()")
