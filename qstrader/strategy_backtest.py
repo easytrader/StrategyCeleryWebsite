@@ -20,8 +20,8 @@ print("parentdir")
 print(parentdir)
 print("dir")
 print(dir)
-from temp_strategy import CustomStrategy
-from temp_position import CustomPositionSizer
+from custom_strategy import CustomStrategy
+from custom_position import CustomPositionSizer
 
 def run(config, testing, tickers, filename):
 

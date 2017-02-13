@@ -146,11 +146,11 @@ def strategy_run(request):
         #os.path.join(os.path.dirname(__file__))
 
 
-        f = open(os.path.dirname(__file__)+"/../qstrader/temp_strategy.py", 'w')
+        f = open(os.path.dirname(__file__)+"/../qstrader/custom_strategy.py", 'w')
         f.write(request.POST['strategy_content'])
         f.close()
 
-        f = open(os.path.dirname(__file__) + "/../qstrader/temp_position.py", 'w')
+        f = open(os.path.dirname(__file__) + "/../qstrader/custom_position.py", 'w')
         f.write(request.POST['position_content'])
         f.close()
 
