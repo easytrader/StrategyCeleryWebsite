@@ -91,7 +91,7 @@ def strategy_del(request):
         #request_context.push(locals())
         #html = template.render(request_context)
         #data = request.POST.get('checkedValue')
-        return HttpResponse("", content_type='application/json')
+        return HttpResponse(json.dumps({'name': request.POST['checkedValue']}), content_type="application/json")
     else:
         raise Http404
 

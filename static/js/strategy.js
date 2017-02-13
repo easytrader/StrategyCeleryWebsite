@@ -16,7 +16,9 @@ $(document).ready(function() {
             dataType: "json",
             data: { "checkedValue":checkedValue  },
             success: function(data) {
-                alert("leo test in success");
+                //alert("leo test in success");
+                //alert("You will now be redirected.");
+                window.location = "/strategy/";
             },
         });
 
