@@ -145,7 +145,7 @@ def strategy_run(request):
         #os.path.join(os.path.dirname(__file__))
 
         ## call date command ##
-        p = subprocess.Popen("python " + os.path.dirname(__file__)+"/../qstrader/web_buy_and_hold_backtest.py", stdout=subprocess.PIPE, shell=True)
+        p = subprocess.Popen("python " + os.path.dirname(__file__)+"/../qstrader/strategy_backtest.py", stdout=subprocess.PIPE, shell=True)
         (output, err) = p.communicate()
         ## Wait for date to terminate. Get return returncode ##
         p_status = p.wait()
