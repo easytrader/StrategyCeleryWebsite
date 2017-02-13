@@ -18,6 +18,25 @@ $(document).ready(function() {
 
     });
 
+    $('.run-strategy').click(function(){
+      //alert("leo test 1");
+      console.log('am i called');
+      //alert("leo test")
+        $.ajax({
+            type: "POST",
+            url: "/strategy_run/",
+            dataType: "json",
+            data: { "strategy_content": editor1.getValue(),"position_content": editor2.getValue()  },
+            success: function (response) {
+                 alert("You will now be redirected.");
+                 window.location = "/strategy_run/";
+
+            },
+        });
+
+    });
+
+
     // CSRF code
     function getCookie(name) {
         var cookieValue = null;
