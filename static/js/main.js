@@ -4,13 +4,13 @@ $(document).ready(function() {
     editor1.setTheme("ace/theme/twilight");
     editor1.getSession().setMode("ace/mode/python");
     editor1.setFontSize(15);
-    editor1.setValue("def main():\n    # Your code goes here\n\nif __name__ == \"__main__\":\n    main()");
+    //editor1.setValue("def main():\n    # Your code goes here\n\nif __name__ == \"__main__\":\n    main()");
 
     var editor2 = ace.edit("editor2");
     editor2.setTheme("ace/theme/twilight");
     editor2.getSession().setMode("ace/mode/python");
     editor2.setFontSize(15);
-    editor2.setValue("def main():\n    print(\"leo\")");
+    //editor2.setValue("def main():\n    print(\"leo\")");
 
 
     $('.save-strategy').click(function(){

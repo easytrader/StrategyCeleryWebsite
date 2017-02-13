@@ -4,16 +4,24 @@ from qstrader import settings
 from qstrader.compat import queue
 from qstrader.price_parser import PriceParser
 from qstrader.price_handler.yahoo_daily_csv_bar import YahooDailyCsvBarPriceHandler
-from qstrader.strategy.buy_and_hold import BuyAndHoldStrategy
 from qstrader.strategy import Strategies, DisplayStrategy
-from qstrader.position_sizer.fixed import FixedPositionSizer
 from qstrader.risk_manager.example import ExampleRiskManager
 from qstrader.portfolio_handler import PortfolioHandler
 from qstrader.compliance.example import ExampleCompliance
 from qstrader.execution_handler.ib_simulated import IBSimulatedExecutionHandler
 from qstrader.statistics.simple import SimpleStatistics
 from qstrader.trading_session.backtest import Backtest
-
+#====================================================
+import os,sys
+parentdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+dir = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0,dir)
+print("parentdir")
+print(parentdir)
+print("dir")
+print(dir)
+from temp_strategy import CustomStrategy
+from temp_position import CustomPositionSizer
 
 def run(config, testing, tickers, filename):
 
@@ -28,11 +36,11 @@ def run(config, testing, tickers, filename):
     )
 
     # Use the Buy and Hold Strategy
-    strategy = BuyAndHoldStrategy(tickers, events_queue)
+    strategy = CustomStrategy(tickers, events_queue)
     strategy = Strategies(strategy, DisplayStrategy())
 
     # Use an example Position Sizer
-    position_sizer = FixedPositionSizer()
+    position_sizer = CustomPositionSizer()
 
     # Use an example Risk Manager
     risk_manager = ExampleRiskManager()

@@ -144,7 +144,8 @@ def strategy_run(request):
         print("os.path.dirname")
         print(os.path.dirname(__file__))
         #os.path.join(os.path.dirname(__file__))
-        """"
+
+
         f = open(os.path.dirname(__file__)+"/../qstrader/temp_strategy.py", 'w')
         f.write(request.POST['strategy_content'])
         f.close()
@@ -152,7 +153,15 @@ def strategy_run(request):
         f = open(os.path.dirname(__file__) + "/../qstrader/temp_position.py", 'w')
         f.write(request.POST['position_content'])
         f.close()
-        """
+
+
+        png_file = os.path.dirname(__file__)+"/../static/img/backtest_result.png"
+        ## delete only if file exists ##
+        if os.path.exists(png_file):
+            os.remove(png_file)
+        else:
+            print("Sorry, I can not remove %s file." % png_file)
+
         ## call date command ##
         p = subprocess.Popen("python " + os.path.dirname(__file__)+"/../qstrader/strategy_backtest.py", stdout=subprocess.PIPE, shell=True)
         (output, err) = p.communicate()

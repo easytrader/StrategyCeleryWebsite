@@ -5,12 +5,12 @@
 <title>ACE in Action</title>
 <style type="text/css" media="screen">
    #editor1 {
-       height: 300px;
-       width:  500px;
+       height: 500px;
+       width:  900px;
    }
    #editor2 {
-       height: 300px;
-       width:  500px;
+       height: 500px;
+       width:  900px;
    }
 </style>
     <script src= "{% static 'hackIDE/ace-builds/src/ace.js' %}" type="text/javascript" charset="utf-8"></script>
@@ -23,12 +23,49 @@
 <input type ="button" onclick="location.href = '/strategy';" value="回到上一頁"></input>
 <h3 class="panel-title">Strategy Editor</h3>
 <input class="Strategy-name" type="text" placeholder="Strategy Name">
-<div id="editor1"></div>
+<div id="editor1">from qstrader.strategy.base import AbstractStrategy
+
+from qstrader.event import (SignalEvent, EventType)
+
+
+class CustomStrategy(AbstractStrategy):
+    """
+    A testing strategy that simply purchases (longs) a set of
+    assets upon first receipt of the relevant bar event and
+    then holds until the completion of a backtest.
+    """
+    def __init__(self, tickers, events_queue):
+        self.tickers = tickers
+        self.events_queue = events_queue
+        self.ticks = 0
+        self.invested = False
+
+    def calculate_signals(self, event):
+        ticker = self.tickers[0]
+        if event.type in [EventType.BAR, EventType.TICK] and event.ticker == ticker:
+            if not self.invested and self.ticks == 0:
+                signal = SignalEvent(ticker, "BOT")
+                self.events_queue.put(signal)
+                self.invested = True
+            self.ticks += 1</div>
 
  <!-- ****************************seperate********************* -->
 
 <h3 class="panel-title">Position Editor</h3>
-<div id="editor2"></div>
+<div id="editor2">from qstrader.position_sizer.base import AbstractPositionSizer
+
+
+class CustomPositionSizer(AbstractPositionSizer):
+    def __init__(self, default_quantity=100):
+        self.default_quantity = default_quantity
+
+    def size_order(self, portfolio, initial_order):
+        """
+        This FixedPositionSizer object simply modifies
+        the quantity to be 100 of any share transacted.
+        """
+        initial_order.quantity = self.default_quantity
+        return initial_order</div>
 
 <button class='btn save-strategy'>Save Strategy</button>
 <button class='btn run-strategy' >Run Strategy</button>
