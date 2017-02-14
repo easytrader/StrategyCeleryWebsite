@@ -35,6 +35,9 @@
 
 <button class='btn save-strategy'>Save Strategy</button>
 <button class='btn run-strategy' >Run Strategy</button>
+
+<div id="loadingIMG" style="display:none"><img src="{% static 'img/Loading.gif' %}" width="100" height='50'/>資料處理中，請稍後。</div>
+
 <script>
     var editor1 = ace.edit("editor1");
     editor1.setTheme("ace/theme/twilight");

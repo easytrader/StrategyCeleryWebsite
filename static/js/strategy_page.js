@@ -27,8 +27,14 @@ $(document).ready(function() {
             url: "/strategy_run/",
             dataType: "json",
             data: { "strategy_content": editor1.getValue(),"position_content": editor2.getValue()  },
+            beforeSend: function(){
+                $('#loadingIMG').show();
+            },
+            complete: function(){
+                $('#loadingIMG').hide();
+            },
             success: function (response) {
-                 alert("You will now be redirected.");
+                 //alert("You will now be redirected.");
                  window.location = "/strategy_run/";
 
             },
