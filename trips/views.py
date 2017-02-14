@@ -1,3 +1,7 @@
+# @Author: Chen yunsheng(Leo YS CHen)
+# @Date:   2017-02-14 00:11:27
+# @Last Modified by:   Chen yunsheng
+
 from django.template import RequestContext
 from django.template.loader import get_template
 from django.http import HttpResponse,Http404,HttpResponseRedirect

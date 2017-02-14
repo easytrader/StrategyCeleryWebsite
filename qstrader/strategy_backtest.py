@@ -1,3 +1,7 @@
+# @Author: Chen yunsheng(Leo YS CHen)
+# @Date:   2017-02-14 00:11:27
+# @Last Modified by:   Chen yunsheng
+
 import click
 
 from qstrader import settings
