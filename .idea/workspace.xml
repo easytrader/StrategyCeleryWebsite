@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffefab46-bd49-4aa8-9f52-f64f8af3f8c7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qstrader/strategy_backtest.py" afterPath="$PROJECT_DIR$/qstrader/strategy_backtest.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trips/admin.py" afterPath="$PROJECT_DIR$/trips/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trips/apps.py" afterPath="$PROJECT_DIR$/trips/apps.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trips/forms.py" afterPath="$PROJECT_DIR$/trips/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trips/models.py" afterPath="$PROJECT_DIR$/trips/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trips/tests.py" afterPath="$PROJECT_DIR$/trips/tests.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trips/views.py" afterPath="$PROJECT_DIR$/trips/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,10 +19,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/trips/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
+            <state relative-caret-position="-2212">
               <caret line="4" column="36" lean-forward="false" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
               <folding>
                 <element signature="e#159#201#0" expanded="true" />
@@ -65,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/trips/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="36" lean-forward="false" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+            <state relative-caret-position="165">
+              <caret line="12" column="46" lean-forward="false" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -87,6 +83,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="strategy_run.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/strategy_run.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/trips/admin.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -97,34 +103,24 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="strategy.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/strategy.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="strategy_backtest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/qstrader/strategy_backtest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="6" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="36" />
+            <state relative-caret-position="-915">
+              <caret line="1" column="6" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="36" />
               <folding>
                 <element signature="e#159#171#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strategy_page.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/js/strategy_page.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="52" lean-forward="false" selection-start-line="30" selection-start-column="17" selection-end-line="31" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strategy.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/js/strategy.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -144,7 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/strategy_run.html" />
         <option value="$PROJECT_DIR$/qstrader/temp_position.py" />
         <option value="$PROJECT_DIR$/qstrader/temp_strategy.py" />
         <option value="$PROJECT_DIR$/static/js/main.js" />
@@ -153,12 +148,13 @@
         <option value="$PROJECT_DIR$/static/js/strategy_page.js" />
         <option value="$PROJECT_DIR$/static/js/strategy.js" />
         <option value="$PROJECT_DIR$/qstrader/strategy_backtest.py" />
-        <option value="$PROJECT_DIR$/trips/views.py" />
         <option value="$PROJECT_DIR$/trips/tests.py" />
         <option value="$PROJECT_DIR$/trips/models.py" />
-        <option value="$PROJECT_DIR$/trips/forms.py" />
         <option value="$PROJECT_DIR$/trips/apps.py" />
         <option value="$PROJECT_DIR$/trips/admin.py" />
+        <option value="$PROJECT_DIR$/trips/forms.py" />
+        <option value="$PROJECT_DIR$/templates/strategy_run.html" />
+        <option value="$PROJECT_DIR$/trips/views.py" />
       </list>
     </option>
   </component>
@@ -276,7 +272,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../qstrader" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -704,22 +700,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/strategy_run.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/strategy.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -752,16 +732,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qstrader/strategy_backtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="6" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="36" />
-          <folding>
-            <element signature="e#159#171#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/trips/apps.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -788,16 +758,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trips/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="36" lean-forward="false" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
-          <folding>
-            <element signature="e#159#201#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/trips/tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -814,11 +774,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/qstrader/strategy_backtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-915">
+          <caret line="1" column="6" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="36" />
+          <folding>
+            <element signature="e#159#171#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/trips/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="36" lean-forward="false" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+        <state relative-caret-position="165">
+          <caret line="12" column="46" lean-forward="false" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/strategy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/strategy_run.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trips/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2212">
+          <caret line="4" column="36" lean-forward="false" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+          <folding>
+            <element signature="e#159#201#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
