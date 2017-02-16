@@ -111,6 +111,7 @@ def strategy_page(request, strategy_id):
 def new_strategy(request):
     return render_to_response('new_strategy.html', locals(), context_instance=RequestContext(request))
 
+@csrf_exempt
 def new_strategy_save(request):
     print("leo test new_strategy_save")
     print("request.POST")
