@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffefab46-bd49-4aa8-9f52-f64f8af3f8c7" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/backtest_result.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qstrader/custom_strategy.py" afterPath="$PROJECT_DIR$/qstrader/custom_strategy.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/strategy_run.html" afterPath="$PROJECT_DIR$/templates/strategy_run.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trips/views.py" afterPath="$PROJECT_DIR$/trips/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +21,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/trips/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="169" column="0" lean-forward="true" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
+            <state relative-caret-position="252">
+              <caret line="121" column="12" lean-forward="false" selection-start-line="121" selection-start-column="12" selection-end-line="121" selection-end-column="12" />
               <folding>
                 <element signature="e#159#201#0" expanded="true" />
               </folding>
@@ -37,7 +34,7 @@
         <entry file="file://$PROJECT_DIR$/templates/new_strategy.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="662">
-              <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+              <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -48,7 +45,7 @@
       <file leaf-file-name="strategy_page.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/strategy_page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
+            <state relative-caret-position="496">
               <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="125" />
               <folding>
                 <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -70,8 +67,8 @@
       <file leaf-file-name="strategy_page.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/js/strategy_page.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="14" lean-forward="false" selection-start-line="29" selection-start-column="12" selection-end-line="34" selection-end-column="14" />
+            <state relative-caret-position="225">
+              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -823,8 +820,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/strategy_page.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="14" lean-forward="false" selection-start-line="29" selection-start-column="12" selection-end-line="34" selection-end-column="14" />
+        <state relative-caret-position="225">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -847,7 +844,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/strategy_page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
+        <state relative-caret-position="496">
           <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="125" />
           <folding>
             <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -858,7 +855,7 @@
     <entry file="file://$PROJECT_DIR$/templates/new_strategy.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="662">
-          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -875,8 +872,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/trips/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="169" column="0" lean-forward="true" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
+        <state relative-caret-position="252">
+          <caret line="121" column="12" lean-forward="false" selection-start-line="121" selection-start-column="12" selection-end-line="121" selection-end-column="12" />
           <folding>
             <element signature="e#159#201#0" expanded="true" />
           </folding>

@@ -119,6 +119,7 @@ def new_strategy_save(request):
         models.Strategy.objects.create(strategy_name=request.POST['name'],strategy=request.POST['strategy_content'],position=request.POST['position_content'],user=request.user)
     return HttpResponse("", content_type='application/json')
 
+@csrf_exempt
 def strategy_modify(request):
     print("leo test new_strategy_modify")
     print("request.POST['strategy_content']")
