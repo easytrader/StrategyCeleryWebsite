@@ -5,12 +5,15 @@ $(document).ready(function() {
     $('.save-strategy').click(function(){
       //alert("leo test 1");
       console.log('am i called');
-      //alert("leo test")
+      var path = window.location.pathname
+      var str = path.split("/");
+      //alert(str)
+      //alert(str[2])
         $.ajax({
             type: "POST",
             url: "/strategy_modify/",
             dataType: "json",
-            data: { "strategy_content": editor1.getValue(),"position_content": editor2.getValue() },
+            data: { "strategy_content": editor1.getValue(),"position_content": editor2.getValue(),"pk_key":parseInt(str[2])},
             success: function(data) {
                 //alert(data["name"]);
             }

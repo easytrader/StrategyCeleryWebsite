@@ -103,7 +103,9 @@ def strategy_del(request):
         raise Http404
 
 def strategy_page(request, strategy_id):
-    #print("leo test into strategy_page:strategy_id")
+    print("leo test into strategy_page:strategy_id")
+    print("strategy_id")
+    print(strategy_id)
     strategy= models.Strategy.objects.get(pk=strategy_id)
 
     return render_to_response("strategy_page.html", {"strategy": strategy})
@@ -124,11 +126,14 @@ def new_strategy_save(request):
 @csrf_exempt
 def strategy_modify(request):
     print("leo test new_strategy_modify")
-    print("request.POST['strategy_content']")
-    print(request.POST['strategy_content'])
+    print("request.POST['pk_key']")
+    print(request.POST['pk_key'])
+    #print("request.POST['strategy_content']")
+    #print(request.POST['strategy_content'])
     #.update(field1='some value')
     if request.POST['strategy_content'] or request.POST['position_content'] or request.POST['name'] is not None:
-        models.Strategy.objects.update(strategy=request.POST['strategy_content'],
+        #strategy = models.Strategy.objects.get(pk=strategy_id)
+        models.Strategy.objects.filter(pk=request.POST['pk_key']).update(strategy=request.POST['strategy_content'],
                                        position=request.POST['position_content'])
     return HttpResponse("", content_type='application/json')
 
