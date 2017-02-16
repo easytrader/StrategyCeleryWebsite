@@ -17,12 +17,15 @@
         <img src="{% static 'img/backtest_result.png' %}">
             <br>
             <h3>Output</h3>
-            <br>
+            <br/>
+            <div style="width:1200px; height:400px; overflow: auto;" >
             {{output|linebreaksbr}}
-            <br>
+            </div>
+            <br/>
             <h3>Error</h3>
-            <br>
+            <br/>
             {{err|linebreaksbr}}
+            <br/>
         </div>
         {% endblock %}
 
