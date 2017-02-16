@@ -208,5 +208,6 @@ def strategy_run(request):
         err = f.read()
         f.close()
 
+
         return render_to_response('strategy_run.html', locals())
 

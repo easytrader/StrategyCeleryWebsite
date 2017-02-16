@@ -2,5 +2,127 @@ parentdir
 /home/leo/github/StrategyCeleryWebsite
 dir
 /home/leo/github/StrategyCeleryWebsite/qstrader
-No tradelog files to clean.
 Running Backtest...
+0 Type: EventType.BAR, Ticker: SP500TR, Time: 2010-01-04 00:00:00, Period: 1day, Open: 1116.56, High: 1133.87, Low: 1116.56, Close: 1132.99, Adj Close: 1132.99, Volume: 3991400000
+1 Type: EventType.BAR, Ticker: SP500TR, Time: 2010-01-05 00:00:00, Period: 1day, Open: 1132.66, High: 1136.63, Low: 1129.66, Close: 1136.52, Adj Close: 1136.52, Volume: 2491020000
+2 Type: EventType.BAR, Ticker: SP500TR, Time: 2010-01-06 00:00:00, Period: 1day, Open: 1135.71, High: 1139.19, Low: 1133.95, Close: 1137.14, Adj Close: 1137.14, Volume: 4972660000
+3 Type: EventType.BAR, Ticker: SP500TR, Time: 2010-01-07 00:00:00, Period: 1day, Open: 1136.27, High: 1142.46, Low: 1131.32, Close: 1141.69, Adj Close: 1141.69, Volume: 5270680000
+4 Type: EventType.BAR, Ticker: SP500TR, Time: 2010-01-08 00:00:00, Period: 1day, Open: 1140.52, High: 1145.39, Low: 1136.22, Close: 1144.98, Adj Close: 1144.98, Volume: 4389590000
+100 BARS processed @ 722.032976 BARS/s
+
+100 Type: EventType.BAR, Ticker: SP500TR, Time: 2010-05-27 00:00:00, Period: 1day, Open: 1074.27, High: 1103.52, Low: 1074.27, Close: 1103.06, Adj Close: 1103.06, Volume: 5698460000
+101 Type: EventType.BAR, Ticker: SP500TR, Time: 2010-05-28 00:00:00, Period: 1day, Open: 1102.59, High: 1102.59, Low: 1084.78, Close: 1089.41, Adj Close: 1089.41, Volume: 4871210000
+102 Type: EventType.BAR, Ticker: SP500TR, Time: 2010-06-01 00:00:00, Period: 1day, Open: 1087.3, High: 1094.77, Low: 1069.89, Close: 1070.71, Adj Close: 1070.71, Volume: 5271480000
+103 Type: EventType.BAR, Ticker: SP500TR, Time: 2010-06-02 00:00:00, Period: 1day, Open: 1073.01, High: 1098.56, Low: 1072.03, Close: 1098.38, Adj Close: 1098.38, Volume: 5026360000
+104 Type: EventType.BAR, Ticker: SP500TR, Time: 2010-06-03 00:00:00, Period: 1day, Open: 1098.82, High: 1105.67, Low: 1091.81, Close: 1102.83, Adj Close: 1102.83, Volume: 4995970000
+200 BARS processed @ 856.091351 BARS/s
+
+200 Type: EventType.BAR, Ticker: SP500TR, Time: 2010-10-19 00:00:00, Period: 1day, Open: 1178.64, High: 1178.64, Low: 1159.71, Close: 1165.9, Adj Close: 1165.9, Volume: 5600120000
+201 Type: EventType.BAR, Ticker: SP500TR, Time: 2010-10-20 00:00:00, Period: 1day, Open: 1166.74, High: 1182.94, Low: 1166.74, Close: 1178.17, Adj Close: 1178.17, Volume: 5027880000
+202 Type: EventType.BAR, Ticker: SP500TR, Time: 2010-10-21 00:00:00, Period: 1day, Open: 1179.82, High: 1189.43, Low: 1171.17, Close: 1180.26, Adj Close: 1180.26, Volume: 4625470000
+203 Type: EventType.BAR, Ticker: SP500TR, Time: 2010-10-22 00:00:00, Period: 1day, Open: 1180.52, High: 1183.93, Low: 1178.99, Close: 1183.08, Adj Close: 1183.08, Volume: 3177890000
+204 Type: EventType.BAR, Ticker: SP500TR, Time: 2010-10-25 00:00:00, Period: 1day, Open: 1184.74, High: 1196.14, Low: 1184.74, Close: 1185.62, Adj Close: 1185.62, Volume: 4221380000
+300 BARS processed @ 897.674007 BARS/s
+
+300 Type: EventType.BAR, Ticker: SP500TR, Time: 2011-03-14 00:00:00, Period: 1day, Open: 1301.19, High: 1301.19, Low: 1286.37, Close: 1296.39, Adj Close: 1296.39, Volume: 4050370000
+301 Type: EventType.BAR, Ticker: SP500TR, Time: 2011-03-15 00:00:00, Period: 1day, Open: 1288.46, High: 1288.46, Low: 1261.12, Close: 1281.87, Adj Close: 1281.87, Volume: 5201400000
+302 Type: EventType.BAR, Ticker: SP500TR, Time: 2011-03-16 00:00:00, Period: 1day, Open: 1279.46, High: 1280.91, Low: 1249.05, Close: 1256.88, Adj Close: 1256.88, Volume: 5833000000
+303 Type: EventType.BAR, Ticker: SP500TR, Time: 2011-03-17 00:00:00, Period: 1day, Open: 1261.61, High: 1278.88, Low: 1261.61, Close: 1273.72, Adj Close: 1273.72, Volume: 4134950000
+304 Type: EventType.BAR, Ticker: SP500TR, Time: 2011-03-18 00:00:00, Period: 1day, Open: 1276.71, High: 1288.88, Low: 1276.18, Close: 1279.21, Adj Close: 1279.21, Volume: 4685500000
+400 BARS processed @ 890.480154 BARS/s
+
+400 Type: EventType.BAR, Ticker: SP500TR, Time: 2011-08-04 00:00:00, Period: 1day, Open: 1260.23, High: 1260.23, Low: 1199.54, Close: 1200.07, Adj Close: 1200.07, Volume: 4266530000
+401 Type: EventType.BAR, Ticker: SP500TR, Time: 2011-08-05 00:00:00, Period: 1day, Open: 1200.28, High: 1218.11, Low: 1168.09, Close: 1199.38, Adj Close: 1199.38, Volume: 5454590000
+402 Type: EventType.BAR, Ticker: SP500TR, Time: 2011-08-08 00:00:00, Period: 1day, Open: 1198.48, High: 1198.48, Low: 1119.28, Close: 1119.46, Adj Close: 1119.46, Volume: 2615150000
+403 Type: EventType.BAR, Ticker: SP500TR, Time: 2011-08-09 00:00:00, Period: 1day, Open: 1120.23, High: 1172.88, Low: 1101.54, Close: 1172.53, Adj Close: 1172.53, Volume: 2366660000
+404 Type: EventType.BAR, Ticker: SP500TR, Time: 2011-08-10 00:00:00, Period: 1day, Open: 1171.77, High: 1171.77, Low: 1118.01, Close: 1120.76, Adj Close: 1120.76, Volume: 5018070000
+500 BARS processed @ 918.840741 BARS/s
+
+500 Type: EventType.BAR, Ticker: SP500TR, Time: 2011-12-27 00:00:00, Period: 1day, Open: 1265.02, High: 1269.37, Low: 1262.3, Close: 1265.43, Adj Close: 1265.43, Volume: 2130590000
+501 Type: EventType.BAR, Ticker: SP500TR, Time: 2011-12-28 00:00:00, Period: 1day, Open: 1265.38, High: 1265.85, Low: 1248.64, Close: 1249.64, Adj Close: 1249.64, Volume: 2349980000
+502 Type: EventType.BAR, Ticker: SP500TR, Time: 2011-12-29 00:00:00, Period: 1day, Open: 1249.75, High: 1263.54, Low: 1249.75, Close: 1263.02, Adj Close: 1263.02, Volume: 2278130000
+503 Type: EventType.BAR, Ticker: SP500TR, Time: 2011-12-30 00:00:00, Period: 1day, Open: 1262.82, High: 1264.12, Low: 1257.46, Close: 1257.6, Adj Close: 1257.6, Volume: 2271850000
+504 Type: EventType.BAR, Ticker: SP500TR, Time: 2012-01-03 00:00:00, Period: 1day, Open: 1258.86, High: 1284.62, Low: 1258.86, Close: 1277.06, Adj Close: 1277.06, Volume: 3943710000
+600 BARS processed @ 921.500673 BARS/s
+
+600 Type: EventType.BAR, Ticker: SP500TR, Time: 2012-05-21 00:00:00, Period: 1day, Open: 1295.73, High: 1316.39, Low: 1295.73, Close: 1315.99, Adj Close: 1315.99, Volume: 3786750000
+601 Type: EventType.BAR, Ticker: SP500TR, Time: 2012-05-22 00:00:00, Period: 1day, Open: 1316.09, High: 1328.49, Low: 1310.04, Close: 1316.63, Adj Close: 1316.63, Volume: 4123680000
+602 Type: EventType.BAR, Ticker: SP500TR, Time: 2012-05-23 00:00:00, Period: 1day, Open: 1316.02, High: 1320.71, Low: 1296.53, Close: 1318.86, Adj Close: 1318.86, Volume: 4108330000
+603 Type: EventType.BAR, Ticker: SP500TR, Time: 2012-05-24 00:00:00, Period: 1day, Open: 1318.72, High: 1324.14, Low: 1310.5, Close: 1320.68, Adj Close: 1320.68, Volume: 3937670000
+604 Type: EventType.BAR, Ticker: SP500TR, Time: 2012-05-25 00:00:00, Period: 1day, Open: 1320.81, High: 1324.2, Low: 1314.23, Close: 1317.82, Adj Close: 1317.82, Volume: 2872660000
+700 BARS processed @ 937.134328 BARS/s
+
+700 Type: EventType.BAR, Ticker: SP500TR, Time: 2012-10-11 00:00:00, Period: 1day, Open: 1432.82, High: 1443.9, Low: 1432.82, Close: 1432.84, Adj Close: 1432.84, Volume: 3672540000
+701 Type: EventType.BAR, Ticker: SP500TR, Time: 2012-10-12 00:00:00, Period: 1day, Open: 1432.84, High: 1438.43, Low: 1425.53, Close: 1428.59, Adj Close: 1428.59, Volume: 3134750000
+702 Type: EventType.BAR, Ticker: SP500TR, Time: 2012-10-15 00:00:00, Period: 1day, Open: 1428.75, High: 1441.31, Low: 1427.24, Close: 1440.13, Adj Close: 1440.13, Volume: 3483810000
+703 Type: EventType.BAR, Ticker: SP500TR, Time: 2012-10-16 00:00:00, Period: 1day, Open: 1440.31, High: 1455.51, Low: 1440.31, Close: 1454.92, Adj Close: 1454.92, Volume: 3568770000
+704 Type: EventType.BAR, Ticker: SP500TR, Time: 2012-10-17 00:00:00, Period: 1day, Open: 1454.22, High: 1462.2, Low: 1453.35, Close: 1460.91, Adj Close: 1460.91, Volume: 3655320000
+800 BARS processed @ 942.187434 BARS/s
+
+800 Type: EventType.BAR, Ticker: SP500TR, Time: 2013-03-11 00:00:00, Period: 1day, Open: 1551.15, High: 1556.27, Low: 1547.36, Close: 1556.22, Adj Close: 1556.22, Volume: 3091080000
+801 Type: EventType.BAR, Ticker: SP500TR, Time: 2013-03-12 00:00:00, Period: 1day, Open: 1556.22, High: 1556.77, Low: 1548.24, Close: 1552.48, Adj Close: 1552.48, Volume: 3274910000
+802 Type: EventType.BAR, Ticker: SP500TR, Time: 2013-03-13 00:00:00, Period: 1day, Open: 1552.48, High: 1556.39, Low: 1548.25, Close: 1554.52, Adj Close: 1554.52, Volume: 3073830000
+803 Type: EventType.BAR, Ticker: SP500TR, Time: 2013-03-14 00:00:00, Period: 1day, Open: 1554.52, High: 1563.32, Low: 1554.52, Close: 1563.23, Adj Close: 1563.23, Volume: 3459260000
+804 Type: EventType.BAR, Ticker: SP500TR, Time: 2013-03-15 00:00:00, Period: 1day, Open: 1563.21, High: 1563.62, Low: 1555.74, Close: 1560.7, Adj Close: 1560.7, Volume: 5175850000
+900 BARS processed @ 955.295386 BARS/s
+
+900 Type: EventType.BAR, Ticker: SP500TR, Time: 2013-08-01 00:00:00, Period: 1day, Open: 1689.42, High: 1707.85, Low: 1689.42, Close: 1706.87, Adj Close: 1706.87, Volume: 3775170000
+901 Type: EventType.BAR, Ticker: SP500TR, Time: 2013-08-02 00:00:00, Period: 1day, Open: 1706.1, High: 1709.67, Low: 1700.68, Close: 1709.67, Adj Close: 1709.67, Volume: 3136630000
+902 Type: EventType.BAR, Ticker: SP500TR, Time: 2013-08-05 00:00:00, Period: 1day, Open: 1708.01, High: 1709.24, Low: 1703.55, Close: 1707.14, Adj Close: 1707.14, Volume: 2529300000
+903 Type: EventType.BAR, Ticker: SP500TR, Time: 2013-08-06 00:00:00, Period: 1day, Open: 1705.79, High: 1705.79, Low: 1693.29, Close: 1697.37, Adj Close: 1697.37, Volume: 3141210000
+904 Type: EventType.BAR, Ticker: SP500TR, Time: 2013-08-07 00:00:00, Period: 1day, Open: 1695.3, High: 1695.3, Low: 1684.91, Close: 1690.91, Adj Close: 1690.91, Volume: 3010230000
+1000 BARS processed @ 954.572993 BARS/s
+
+1000 Type: EventType.BAR, Ticker: SP500TR, Time: 2013-12-23 00:00:00, Period: 1day, Open: 1822.92, High: 1829.75, Low: 1822.92, Close: 1827.99, Adj Close: 1827.99, Volume: 2851540000
+1001 Type: EventType.BAR, Ticker: SP500TR, Time: 2013-12-24 00:00:00, Period: 1day, Open: 1828.02, High: 1833.32, Low: 1828.02, Close: 1833.32, Adj Close: 1833.32, Volume: 1307630000
+1002 Type: EventType.BAR, Ticker: SP500TR, Time: 2013-12-26 00:00:00, Period: 1day, Open: 1834.96, High: 1842.84, Low: 1834.96, Close: 1842.02, Adj Close: 1842.02, Volume: 1982270000
+1003 Type: EventType.BAR, Ticker: SP500TR, Time: 2013-12-27 00:00:00, Period: 1day, Open: 1842.97, High: 1844.89, Low: 1839.81, Close: 1841.4, Adj Close: 1841.4, Volume: 2052920000
+1004 Type: EventType.BAR, Ticker: SP500TR, Time: 2013-12-30 00:00:00, Period: 1day, Open: 1841.47, High: 1842.47, Low: 1838.77, Close: 1841.07, Adj Close: 1841.07, Volume: 2293860000
+1100 BARS processed @ 941.307775 BARS/s
+
+1100 Type: EventType.BAR, Ticker: SP500TR, Time: 2014-05-19 00:00:00, Period: 1day, Open: 1876.66, High: 1886.0, Low: 1872.42, Close: 1885.08, Adj Close: 1885.08, Volume: 2664250000
+1101 Type: EventType.BAR, Ticker: SP500TR, Time: 2014-05-20 00:00:00, Period: 1day, Open: 1884.88, High: 1884.88, Low: 1868.14, Close: 1872.83, Adj Close: 1872.83, Volume: 3007700000
+1102 Type: EventType.BAR, Ticker: SP500TR, Time: 2014-05-21 00:00:00, Period: 1day, Open: 1873.34, High: 1888.8, Low: 1873.34, Close: 1888.03, Adj Close: 1888.03, Volume: 2777140000
+1103 Type: EventType.BAR, Ticker: SP500TR, Time: 2014-05-22 00:00:00, Period: 1day, Open: 1888.19, High: 1896.33, Low: 1885.39, Close: 1892.49, Adj Close: 1892.49, Volume: 2759800000
+1104 Type: EventType.BAR, Ticker: SP500TR, Time: 2014-05-23 00:00:00, Period: 1day, Open: 1893.32, High: 1901.26, Low: 1893.32, Close: 1900.53, Adj Close: 1900.53, Volume: 2396280000
+1200 BARS processed @ 946.457389 BARS/s
+
+1200 Type: EventType.BAR, Ticker: SP500TR, Time: 2014-10-09 00:00:00, Period: 1day, Open: 1967.68, High: 1967.68, Low: 1927.56, Close: 1928.21, Adj Close: 1928.21, Volume: 4324020000
+1201 Type: EventType.BAR, Ticker: SP500TR, Time: 2014-10-10 00:00:00, Period: 1day, Open: 1925.63, High: 1936.98, Low: 1906.05, Close: 1906.13, Adj Close: 1906.13, Volume: 4550540000
+1202 Type: EventType.BAR, Ticker: SP500TR, Time: 2014-10-13 00:00:00, Period: 1day, Open: 1905.65, High: 1912.09, Low: 1874.14, Close: 1874.74, Adj Close: 1874.74, Volume: 4352580000
+1203 Type: EventType.BAR, Ticker: SP500TR, Time: 2014-10-14 00:00:00, Period: 1day, Open: 1877.11, High: 1898.71, Low: 1871.79, Close: 1877.7, Adj Close: 1877.7, Volume: 4812010000
+1204 Type: EventType.BAR, Ticker: SP500TR, Time: 2014-10-15 00:00:00, Period: 1day, Open: 1874.18, High: 1874.18, Low: 1820.66, Close: 1862.49, Adj Close: 1862.49, Volume: 6090800000
+1300 BARS processed @ 945.695267 BARS/s
+
+1300 Type: EventType.BAR, Ticker: SP500TR, Time: 2015-03-05 00:00:00, Period: 1day, Open: 2098.54, High: 2104.25, Low: 2095.22, Close: 2101.04, Adj Close: 2101.04, Volume: 3103030000
+1301 Type: EventType.BAR, Ticker: SP500TR, Time: 2015-03-06 00:00:00, Period: 1day, Open: 2100.91, High: 2100.91, Low: 2067.27, Close: 2071.26, Adj Close: 2071.26, Volume: 3853570000
+1302 Type: EventType.BAR, Ticker: SP500TR, Time: 2015-03-09 00:00:00, Period: 1day, Open: 2072.25, High: 2083.49, Low: 2072.21, Close: 2079.43, Adj Close: 2079.43, Volume: 3349090000
+1303 Type: EventType.BAR, Ticker: SP500TR, Time: 2015-03-10 00:00:00, Period: 1day, Open: 2076.14, High: 2076.14, Low: 2044.16, Close: 2044.16, Adj Close: 2044.16, Volume: 3668900000
+1304 Type: EventType.BAR, Ticker: SP500TR, Time: 2015-03-11 00:00:00, Period: 1day, Open: 2044.69, High: 2050.08, Low: 2039.69, Close: 2040.24, Adj Close: 2040.24, Volume: 3406570000
+1400 BARS processed @ 952.197000 BARS/s
+
+1400 Type: EventType.BAR, Ticker: SP500TR, Time: 2015-07-28 00:00:00, Period: 1day, Open: 2070.75, High: 2095.6, Low: 2069.09, Close: 2093.25, Adj Close: 2093.25, Volume: 4117740000
+1401 Type: EventType.BAR, Ticker: SP500TR, Time: 2015-07-29 00:00:00, Period: 1day, Open: 2094.7, High: 2110.6, Low: 2094.08, Close: 2108.57, Adj Close: 2108.57, Volume: 4038900000
+1402 Type: EventType.BAR, Ticker: SP500TR, Time: 2015-07-30 00:00:00, Period: 1day, Open: 2106.78, High: 2110.48, Low: 2094.97, Close: 2108.63, Adj Close: 2108.63, Volume: 3579410000
+1403 Type: EventType.BAR, Ticker: SP500TR, Time: 2015-07-31 00:00:00, Period: 1day, Open: 2111.6, High: 2114.24, Low: 2102.07, Close: 2103.84, Adj Close: 2103.84, Volume: 3681340000
+1404 Type: EventType.BAR, Ticker: SP500TR, Time: 2015-08-03 00:00:00, Period: 1day, Open: 2104.49, High: 2105.7, Low: 2087.31, Close: 2098.04, Adj Close: 2098.04, Volume: 3476770000
+1500 BARS processed @ 952.519490 BARS/s
+
+1500 Type: EventType.BAR, Ticker: SP500TR, Time: 2015-12-17 00:00:00, Period: 1day, Open: 2073.76, High: 2076.37, Low: 2041.66, Close: 2041.89, Adj Close: 2041.89, Volume: 4327390000
+1501 Type: EventType.BAR, Ticker: SP500TR, Time: 2015-12-18 00:00:00, Period: 1day, Open: 2040.81, High: 2040.81, Low: 2005.33, Close: 2005.55, Adj Close: 2005.55, Volume: 6683070000
+1502 Type: EventType.BAR, Ticker: SP500TR, Time: 2015-12-21 00:00:00, Period: 1day, Open: 2010.27, High: 2022.9, Low: 2005.93, Close: 2021.15, Adj Close: 2021.15, Volume: 3760280000
+1503 Type: EventType.BAR, Ticker: SP500TR, Time: 2015-12-22 00:00:00, Period: 1day, Open: 2023.15, High: 2042.74, Low: 2020.49, Close: 2038.97, Adj Close: 2038.97, Volume: 3520860000
+1504 Type: EventType.BAR, Ticker: SP500TR, Time: 2015-12-23 00:00:00, Period: 1day, Open: 2042.2, High: 2064.73, Low: 2042.2, Close: 2064.29, Adj Close: 2064.29, Volume: 3484090000
+1600 BARS processed @ 954.289512 BARS/s
+
+1600 Type: EventType.BAR, Ticker: SP500TR, Time: 2016-05-12 00:00:00, Period: 1day, Open: 2067.17, High: 2073.99, Low: 2053.13, Close: 2064.11, Adj Close: 2064.11, Volume: 3782390000
+1601 Type: EventType.BAR, Ticker: SP500TR, Time: 2016-05-13 00:00:00, Period: 1day, Open: 2062.5, High: 2066.79, Low: 2043.13, Close: 2046.61, Adj Close: 2046.61, Volume: 3579880000
+1602 Type: EventType.BAR, Ticker: SP500TR, Time: 2016-05-16 00:00:00, Period: 1day, Open: 2046.53, High: 2071.88, Low: 2046.53, Close: 2066.66, Adj Close: 2066.66, Volume: 3501360000
+1603 Type: EventType.BAR, Ticker: SP500TR, Time: 2016-05-17 00:00:00, Period: 1day, Open: 2065.04, High: 2065.69, Low: 2040.82, Close: 2047.21, Adj Close: 2047.21, Volume: 4108960000
+1604 Type: EventType.BAR, Ticker: SP500TR, Time: 2016-05-18 00:00:00, Period: 1day, Open: 2044.38, High: 2060.61, Low: 2034.49, Close: 2047.63, Adj Close: 2047.63, Volume: 4101320000
+---------------------------------
+Backtest complete.
+Sharpe Ratio: 0.5968
+Max Drawdown: 30174.01
+Max Drawdown Pct: 5.0308
+Save results to '/home/leo/out/statistics_2017-02-16_100544.pkl'

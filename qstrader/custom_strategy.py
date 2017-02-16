@@ -22,4 +22,4 @@ class CustomStrategy(AbstractStrategy):
                 signal = SignalEvent(ticker, "BOT")
                 self.events_queue.put(signal)
                 self.invested = True
-            self.sd
+            self.ticks += 1

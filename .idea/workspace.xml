@@ -6,7 +6,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qstrader/custom_strategy.py" afterPath="$PROJECT_DIR$/qstrader/custom_strategy.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qstrader/output.log" afterPath="$PROJECT_DIR$/qstrader/output.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/strategy_page.js" afterPath="$PROJECT_DIR$/static/js/strategy_page.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/strategy_run.html" afterPath="$PROJECT_DIR$/templates/strategy_run.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trips/views.py" afterPath="$PROJECT_DIR$/trips/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,11 +22,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/trips/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-150">
-              <caret line="99" column="48" lean-forward="true" selection-start-line="99" selection-start-column="48" selection-end-line="99" selection-end-column="48" />
+            <state relative-caret-position="203">
+              <caret line="201" column="0" lean-forward="true" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
               <folding>
                 <element signature="e#159#201#0" expanded="true" />
               </folding>
@@ -67,8 +67,8 @@
       <file leaf-file-name="new_strategy.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/new_strategy.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+            <state relative-caret-position="300">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="6" />
               <folding>
                 <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -98,16 +98,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="strategy_run.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="strategy_run.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/strategy_run.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding>
-                <marker date="1487234620923" expanded="true" signature="142:794" ph="..." />
-                <marker date="1487234620923" expanded="true" signature="281:794" ph="..." />
-                <marker date="1487234620923" expanded="true" signature="313:769" ph="..." />
-              </folding>
+            <state relative-caret-position="341">
+              <caret line="24" column="30" lean-forward="false" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -159,10 +155,10 @@
         <option value="$PROJECT_DIR$/templates/strategy_page.html" />
         <option value="$PROJECT_DIR$/static/js/main.js" />
         <option value="$PROJECT_DIR$/templates/new_strategy.html" />
-        <option value="$PROJECT_DIR$/templates/strategy_run.html" />
         <option value="$PROJECT_DIR$/UseradminTest/urls.py" />
-        <option value="$PROJECT_DIR$/trips/views.py" />
         <option value="$PROJECT_DIR$/static/js/strategy_page.js" />
+        <option value="$PROJECT_DIR$/trips/views.py" />
+        <option value="$PROJECT_DIR$/templates/strategy_run.html" />
       </list>
     </option>
   </component>
@@ -507,11 +503,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="57" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="57" />
-          <folding>
-            <marker date="1487234620923" expanded="true" signature="142:794" ph="..." />
-            <marker date="1487234620923" expanded="true" signature="281:794" ph="..." />
-            <marker date="1487234620923" expanded="true" signature="313:769" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -601,11 +593,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-          <folding>
-            <marker date="1487234620923" expanded="true" signature="142:794" ph="..." />
-            <marker date="1487234620923" expanded="true" signature="281:794" ph="..." />
-            <marker date="1487234620923" expanded="true" signature="313:769" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -824,26 +812,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/strategy.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/strategy_run.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <marker date="1487234620923" expanded="true" signature="142:794" ph="..." />
-            <marker date="1487234620923" expanded="true" signature="281:794" ph="..." />
-            <marker date="1487234620923" expanded="true" signature="313:769" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/trips/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -886,16 +854,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/new_strategy.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="457">
@@ -904,13 +862,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/strategy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/new_strategy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/trips/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-150">
-          <caret line="99" column="48" lean-forward="true" selection-start-line="99" selection-start-column="48" selection-end-line="99" selection-end-column="48" />
+        <state relative-caret-position="203">
+          <caret line="201" column="0" lean-forward="true" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
           <folding>
             <element signature="e#159#201#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/strategy_run.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="24" column="30" lean-forward="false" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
