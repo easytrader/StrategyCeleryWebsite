@@ -15,6 +15,14 @@
             </div>
         {% load staticfiles %}
         <img src="{% static 'img/backtest_result.png' %}">
+            <br>
+            <h3>Output</h3>
+            <br>
+            {{output}}
+            <br>
+            <h3>Error</h3>
+            <br>
+            {{err}}
         </div>
         {% endblock %}
 

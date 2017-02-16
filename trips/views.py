@@ -175,9 +175,30 @@ def strategy_run(request):
         p_status = p.wait()
         print "Command output : ", output
         print "Command exit status/return code : ", p_status
+        print "Command err : ", err
+
+        #===========================================================
+        f = open(os.path.dirname(__file__) + "/../qstrader/output.log", 'w')
+        f.write(output)
+        f.close()
+
+        if err is None:
+            err = ""
+        f = open(os.path.dirname(__file__) + "/../qstrader/err.log", 'w')
+        f.write(err)
+        f.close()
 
         return HttpResponse(json.dumps({'name': request.POST['strategy_content']}), content_type="application/json")
     else:
         print("!request.method == 'POST' and request.is_ajax()")
+
+        f = open(os.path.dirname(__file__) + "/../qstrader/output.log", "r")
+        output = f.read()
+        f.close()
+
+        f = open(os.path.dirname(__file__) + "/../qstrader/err.log", "r")
+        err = f.read()
+        f.close()
+
         return render_to_response('strategy_run.html', locals())
 
