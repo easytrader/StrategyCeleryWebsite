@@ -85,6 +85,7 @@ def strategy(request):
     html = template.render(request_context)
     return HttpResponse(html)
 
+@csrf_exempt
 def strategy_del(request):
     if request.is_ajax():
         print("leo test strategy_del")
