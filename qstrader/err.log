@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/home/leo/github/StrategyCeleryWebsite/trips/../qstrader/strategy_backtest.py", line 29, in <module>
+    from custom_strategy import CustomStrategy
+  File "/home/leo/github/StrategyCeleryWebsite/qstrader/custom_strategy.py", line 25
+    self.ticks += 
+                 ^
+SyntaxError: invalid syntax
