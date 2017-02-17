@@ -15,3 +15,4 @@ git clone https://github.com/easytrader/qstrader.git<br/>
 cd qstrader<br/>
 uninstall -- sudo pip uninstall qstrader<br/>
 install -- sudo python setup.py install<br/>
+*****************************************************************************************************************
