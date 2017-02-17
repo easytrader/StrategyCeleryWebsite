@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from trips.views import index,login,logout,strategy,new_strategy,strategy_page,strategy_del,new_strategy_save,strategy_modify,strategy_run
+from strategyceleryapp.views import index,login,logout,strategy,new_strategy,strategy_page,strategy_del,new_strategy_save,strategy_modify,strategy_run
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),

@@ -17,5 +17,3 @@ class Strategy(models.Model):
     strategy_name = models.CharField(max_length=20)
     strategy = models.TextField()
     position = models.TextField()
-
-
