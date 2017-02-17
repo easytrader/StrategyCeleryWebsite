@@ -16,3 +16,4 @@ cd qstrader<br/>
 uninstall -- sudo pip uninstall qstrader<br/>
 install -- sudo python setup.py install<br/>
 *****************************************************************************************************************
+![alt tag](https://github.com/easytrader/StrategyCeleryWebsite/blob/master/website_backtest_result.png)
