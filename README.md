@@ -9,3 +9,9 @@ sudo apt install redis-server<br/>
 sudo pip install django-celery<br/>
 cd StrategyCeleryWebsite<br/>
 python manage.py runserver<br/>
+*****************************************************************************************************************
+I have modified the qstrader. You should use my qstrader code.<br/>
+git clone https://github.com/easytrader/qstrader.git<br/>
+cd qstrader<br/>
+uninstall -- sudo pip uninstall qstrader<br/>
+install -- sudo python setup.py install<br/>
