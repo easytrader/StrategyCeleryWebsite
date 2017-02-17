@@ -1,6 +1,8 @@
 # StrategyCeleryWebsite<br/>
 username:leo<br/>
 password:qweasdzxc<br/>
+mkdir github<br/>
+cd github<br/>
 git clone https://github.com/easytrader/StrategyCeleryWebsite.git<br/>
 pip install -r https://raw.githubusercontent.com/easytrader/StrategyCeleryWebsite/master/requirements.txt<br/>
 sudo pip install celery<br/>
