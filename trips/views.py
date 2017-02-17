@@ -93,11 +93,7 @@ def strategy_del(request):
         print(request.POST.get('checkedValue'))
         if request.POST.get('checkedValue') is not None:
             models.Strategy.objects.get(pk=request.POST.get('checkedValue')).delete()
-        #template = get_template('strategy.html')
-        #request_context = RequestContext(request)
-        #request_context.push(locals())
-        #html = template.render(request_context)
-        #data = request.POST.get('checkedValue')
+
         return HttpResponse(json.dumps({'name': request.POST['checkedValue']}), content_type="application/json")
     else:
         raise Http404
@@ -115,24 +111,13 @@ def new_strategy(request):
 
 @csrf_exempt
 def new_strategy_save(request):
-    print("leo test new_strategy_save")
-    print("request.POST")
-    print(request.POST)
-    print(request.POST['strategy_content'])
     if request.POST['strategy_content'] or request.POST['position_content'] or request.POST['name'] is not None:
         models.Strategy.objects.create(strategy_name=request.POST['name'],strategy=request.POST['strategy_content'],position=request.POST['position_content'],user=request.user)
     return HttpResponse("", content_type='application/json')
 
 @csrf_exempt
 def strategy_modify(request):
-    print("leo test new_strategy_modify")
-    print("request.POST['pk_key']")
-    print(request.POST['pk_key'])
-    #print("request.POST['strategy_content']")
-    #print(request.POST['strategy_content'])
-    #.update(field1='some value')
     if request.POST['strategy_content'] or request.POST['position_content'] or request.POST['name'] is not None:
-        #strategy = models.Strategy.objects.get(pk=strategy_id)
         models.Strategy.objects.filter(pk=request.POST['pk_key']).update(strategy=request.POST['strategy_content'],
                                        position=request.POST['position_content'])
     return HttpResponse("", content_type='application/json')
@@ -153,12 +138,6 @@ def strategy_run(request):
     html = template.render(request_context)
 
     if request.method == 'POST' and request.is_ajax():
-        print("request.method == 'POST' and request.is_ajax()")
-        print(request.POST['strategy_content'])
-        print("os.path.dirname")
-        print(os.path.dirname(__file__))
-        #os.path.join(os.path.dirname(__file__))
-
 
         f = open(os.path.dirname(__file__)+"/../qstrader/custom_strategy.py", 'w')
         f.write(request.POST['strategy_content'])
@@ -170,14 +149,14 @@ def strategy_run(request):
 
 
         png_file = os.path.dirname(__file__)+"/../static/img/backtest_result.png"
+
         ## delete only if file exists ##
         if os.path.exists(png_file):
             os.remove(png_file)
         else:
             print("Sorry, I can not remove %s file." % png_file)
 
-        ## call date command ##
-        p = subprocess.Popen("python " + os.path.dirname(__file__)+"/../qstrader/strategy_backtest.py", stdout=subprocess.PIPE, shell=True)
+        p = subprocess.Popen("python " + os.path.dirname(__file__) + "/../qstrader/strategy_backtest.py", stdout=subprocess.PIPE,stderr=subprocess.PIPE, shell=True)
         (output, err) = p.communicate()
         ## Wait for date to terminate. Get return returncode ##
         p_status = p.wait()
