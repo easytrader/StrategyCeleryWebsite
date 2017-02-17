@@ -15,13 +15,15 @@ $(document).ready(function() {
 
     $('.save-strategy').click(function(){
       //alert("leo test 1");
+      var begin_date = document.getElementById("begin_date").value
+      var end_date = document.getElementById("end_date").value
       console.log('am i called');
       //alert("leo test")
         $.ajax({
             type: "POST",
             url: "/new_strategy_save/",
             dataType: "json",
-            data: { "strategy_content": editor1.getValue(),"position_content": editor2.getValue(),"name":$(".Strategy-name").val()  },
+            data: { "strategy_content": editor1.getValue(),"position_content": editor2.getValue(),"name":$(".Strategy-name").val(),"begin_date": begin_date ,"end_date": end_date  },
             success: function(data) {
                 //alert(data["name"]);
             }
