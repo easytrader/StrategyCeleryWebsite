@@ -3,19 +3,18 @@
         <div class='container-fluid'>
             <div class='navbar-header'>
                 <div class='navbar-brand' align=center>
-                    分享日記 
+                    Stock Strategy
                 </div>
             </div>
             <ul class='nav navbar-nav'>
                 <li class='active'><a href='/'>Home</a></li>
                     {% if username %}
                     <li><a href='/strategy'>strategy</a></li>
-                    <li><a href='/post'>寫日記</a></li>
-                    <li><a href='/logout'>登出</a></li>
+                    <li><a href='/logout'>logout</a></li>
                     {% else %}
-                    <li><a href='/login'>登入</a></li>
+                    <li><a href='/login'>login</a></li>
                     {% endif %}
-                    <li><a href='/admin'>後台管理</a></li>  
+                    <li><a href='/admin'>Admin Management</a></li>
             </ul>
         </div>
     </nav>

@@ -22,7 +22,7 @@
 </head>
 <body>
 
-<input type="button" onclick="location.href = '/strategy';" value="回到上一頁"></input>
+<input type="button" onclick="location.href = '/strategy';" value="Previous Page"></input>
 <h3 class="panel-title">Strategy Editor</h3>
 <h3>{{strategy.strategy_name}}</h3>
 <div id="editor1">{{strategy.strategy}}</div>
@@ -36,7 +36,7 @@
 <button class='btn save-strategy'>Save Strategy</button>
 <button class='btn run-strategy' >Run Strategy</button>
 
-<div id="loadingIMG" style="display:none"><img src="{% static 'img/Loading.gif' %}" width="100" height='50'/>資料處理中，請稍後。</div>
+<div id="loadingIMG" style="display:none"><img src="{% static 'img/Loading.gif' %}" width="100" height='50'/>Running the backtest，please waiting.</div>
 
 <script>
     var editor1 = ace.edit("editor1");
