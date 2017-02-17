@@ -19,7 +19,9 @@ import json
 import subprocess
 import os
 
-# Create your views here.
+"""
+index.html's view function
+"""
 def index(request, pid=None, del_pass=None):
 
     if request.user.is_authenticated():
@@ -33,6 +35,9 @@ def index(request, pid=None, del_pass=None):
     html = template.render(request_context)
     return HttpResponse(html)
 
+"""
+login.html's view function
+"""
 @csrf_exempt
 def login(request):
 
@@ -65,14 +70,19 @@ def login(request):
     html = template.render(request_context)
     return HttpResponse(html)
 
+"""
+logout.html's view function
+"""
 def logout(request):
     auth.logout(request)
     messages.add_message(request, messages.INFO, "logout success")
     return redirect('/')
 
+"""
+strategy.html's view function
+"""
 def strategy(request):
     Strategies = Strategy.objects.all()
-    print(Strategies)
 
     if request.user.is_authenticated():
         username = request.user.username
@@ -85,12 +95,12 @@ def strategy(request):
     html = template.render(request_context)
     return HttpResponse(html)
 
+"""
+strategy.html del button's function
+"""
 @csrf_exempt
 def strategy_del(request):
     if request.is_ajax():
-        print("leo test strategy_del")
-        print("checkedValue:")
-        print(request.POST.get('checkedValue'))
         if request.POST.get('checkedValue') is not None:
             models.Strategy.objects.get(pk=request.POST.get('checkedValue')).delete()
 
@@ -98,23 +108,33 @@ def strategy_del(request):
     else:
         raise Http404
 
+
+"""
+strategy_page.html's view function
+"""
 def strategy_page(request, strategy_id):
-    print("leo test into strategy_page:strategy_id")
-    print("strategy_id")
-    print(strategy_id)
     strategy= models.Strategy.objects.get(pk=strategy_id)
 
     return render_to_response("strategy_page.html", {"strategy": strategy})
 
+"""
+new_strategy_page.html's view function
+"""
 def new_strategy(request):
     return render_to_response('new_strategy.html', locals(), context_instance=RequestContext(request))
 
+"""
+new_strategy_page.html save strategy's function
+"""
 @csrf_exempt
 def new_strategy_save(request):
     if request.POST['strategy_content'] or request.POST['position_content'] or request.POST['name'] is not None:
         models.Strategy.objects.create(strategy_name=request.POST['name'],strategy=request.POST['strategy_content'],position=request.POST['position_content'],user=request.user)
     return HttpResponse("", content_type='application/json')
 
+"""
+strategy_page.html save strategy's function
+"""
 @csrf_exempt
 def strategy_modify(request):
     if request.POST['strategy_content'] or request.POST['position_content'] or request.POST['name'] is not None:
@@ -122,6 +142,9 @@ def strategy_modify(request):
                                        position=request.POST['position_content'])
     return HttpResponse("", content_type='application/json')
 
+"""
+strategy_page.html run strategy's button
+"""
 @csrf_exempt
 def strategy_run(request):
     print("leo test strategy_run")
