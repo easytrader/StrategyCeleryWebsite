@@ -18,6 +18,10 @@ class Strategy(models.Model):
     strategy = models.TextField()
     position = models.TextField()
 
+class strategy_output(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    strategy_output = models.TextField()
+    strategy_error = models.TextField()
 
 class symbol(models.Model):
     ticker = models.CharField(max_length=40)
