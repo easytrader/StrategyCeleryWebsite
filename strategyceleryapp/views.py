@@ -188,28 +188,24 @@ def strategy_run(request):
         print "Command err : ", err
 
         #===========================================================
-        f = open(os.path.dirname(__file__) + "/../qstrader/output.log", 'w')
-        f.write(output)
-        f.close()
 
-        if err is None:
-            err = ""
-        f = open(os.path.dirname(__file__) + "/../qstrader/err.log", 'w')
-        f.write(err)
-        f.close()
+        strategy_output = models.strategy_output.objects.filter(user__username='leo')
+
+        if not strategy_output.exists():
+            #print("strategy_output is empty")
+            models.strategy_output.objects.create(strategy_output=output, strategy_error=err, user= request.user)
+        else:
+            #print("strategy_output is not empty")
+            models.strategy_output.objects.filter(user__username='leo').update(strategy_output=output, strategy_error=err)
+
 
         return HttpResponse(json.dumps({'name': request.POST['strategy_content']}), content_type="application/json")
     else:
         print("!request.method == 'POST' and request.is_ajax()")
 
-        f = open(os.path.dirname(__file__) + "/../qstrader/output.log", "r")
-        output = f.read()
-        f.close()
-
-        f = open(os.path.dirname(__file__) + "/../qstrader/err.log", "r")
-        err = f.read()
-        f.close()
-
+        strategy_output = models.strategy_output.objects.get(user__username='leo')
+        output = strategy_output.strategy_output
+        err = strategy_output.strategy_error
 
         return render_to_response('strategy_run.html', locals())
 
