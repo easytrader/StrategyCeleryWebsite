@@ -25,12 +25,15 @@ class strategy_output(models.Model):
 
 class symbol(models.Model):
     ticker = models.CharField(max_length=40)
+    instrument = models.CharField(max_length=64,default='stock')
     name = models.CharField(max_length=200)
+    sector = models.CharField(max_length=200,default=None)
+    currency = models.CharField(max_length=64,default='USD')
     created_date = models.DateTimeField(auto_now=True)
     last_updated_date = models.DateTimeField(auto_now=True)
 
 class daily_price(models.Model):
-    symbol_id = models.IntegerField()
+    symbol_id = models.ForeignKey(symbol)
     price_date = models.DateTimeField()
     created_date = models.DateTimeField()
     last_updated_date = models.DateTimeField()

@@ -18,3 +18,5 @@ def test_sqlite():
     print(daily_prices)
     print("daily_prices['high_price']")
     print(daily_prices[0].high_price)
+
+
