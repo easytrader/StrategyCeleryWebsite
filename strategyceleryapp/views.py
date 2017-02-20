@@ -189,21 +189,21 @@ def strategy_run(request):
 
         #===========================================================
 
-        strategy_output = models.strategy_output.objects.filter(user__username='leo')
+        strategy_output = models.strategy_output.objects.filter(user__username=request.user)
 
         if not strategy_output.exists():
             #print("strategy_output is empty")
             models.strategy_output.objects.create(strategy_output=output, strategy_error=err, user= request.user)
         else:
             #print("strategy_output is not empty")
-            models.strategy_output.objects.filter(user__username='leo').update(strategy_output=output, strategy_error=err)
+            models.strategy_output.objects.filter(user__username=request.user).update(strategy_output=output, strategy_error=err)
 
 
         return HttpResponse(json.dumps({'name': request.POST['strategy_content']}), content_type="application/json")
     else:
         print("!request.method == 'POST' and request.is_ajax()")
 
-        strategy_output = models.strategy_output.objects.get(user__username='leo')
+        strategy_output = models.strategy_output.objects.get(user__username=request.user)
         output = strategy_output.strategy_output
         err = strategy_output.strategy_error
 
