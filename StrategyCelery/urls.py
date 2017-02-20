@@ -29,5 +29,4 @@ urlpatterns = [
     url(r'^new_strategy_save/$', new_strategy_save),
     url(r'^strategy_modify/$', strategy_modify),
     url(r'^strategy_run/$', strategy_run),
-    #url(r'^test/$', test_InsertSP500symbols),
 ]
