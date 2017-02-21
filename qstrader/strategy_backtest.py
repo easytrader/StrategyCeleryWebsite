@@ -9,7 +9,7 @@ import click
 from qstrader import settings
 from qstrader.compat import queue
 from qstrader.price_parser import PriceParser
-from qstrader.price_handler.yahoo_daily_csv_bar import YahooDailyCsvBarPriceHandler
+from qstrader.price_handler.sqlite_daily_bar import SqliteDBBarPriceHandler
 from qstrader.strategy import Strategies, DisplayStrategy
 from qstrader.risk_manager.example import ExampleRiskManager
 from qstrader.portfolio_handler import PortfolioHandler
@@ -37,7 +37,7 @@ def run(config, testing, tickers, filename):
     initial_equity = PriceParser.parse(500000.00)
 
     # Use Yahoo Daily Price Handler
-    price_handler = YahooDailyCsvBarPriceHandler(
+    price_handler = SqliteDBBarPriceHandler(
         csv_dir, events_queue, tickers
     )
 
@@ -93,4 +93,4 @@ def main(config, testing, tickers, filename):
 
 
 if __name__ == "__main__":
-    main(settings.DEFAULT_CONFIG_FILENAME,False,'SP500TR','')
+    main(settings.DEFAULT_CONFIG_FILENAME,False,'MMM','')
