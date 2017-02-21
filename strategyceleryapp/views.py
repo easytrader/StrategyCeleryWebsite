@@ -18,11 +18,7 @@ from django.views.decorators.csrf import csrf_exempt
 import json
 import subprocess
 import os
-#===================
-import datetime
-import lxml.html
-from urllib2 import urlopen
-#==================
+
 """
 index.html's view function
 """
@@ -212,4 +208,3 @@ def strategy_run(request):
         err = strategy_output.strategy_error
 
         return render_to_response('strategy_run.html', locals())
-
