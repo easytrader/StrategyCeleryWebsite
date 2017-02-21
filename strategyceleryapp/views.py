@@ -162,6 +162,10 @@ def strategy_run(request):
 
     if request.method == 'POST' and request.is_ajax():
 
+        if not request.POST['tickers']:
+            print("tickers is None")
+            return HttpResponse("", content_type="application/json")
+
         f = open(os.path.dirname(__file__)+"/../qstrader/custom_strategy.py", 'w')
         f.write(request.POST['strategy_content'])
         f.close()
@@ -179,7 +183,10 @@ def strategy_run(request):
         else:
             print("Sorry, I can not remove %s file." % png_file)
 
-        p = subprocess.Popen("python " + os.path.dirname(__file__) + "/../qstrader/strategy_backtest.py", stdout=subprocess.PIPE,stderr=subprocess.PIPE, shell=True)
+        cmd = "python " + os.path.dirname(__file__) + "/../qstrader/strategy_backtest.py %s" % request.POST['tickers'].encode("utf8")
+        #print("cmd")
+        #print(cmd)
+        p = subprocess.Popen(cmd, stdout=subprocess.PIPE,stderr=subprocess.PIPE, shell=True)
         (output, err) = p.communicate()
         ## Wait for date to terminate. Get return returncode ##
         p_status = p.wait()

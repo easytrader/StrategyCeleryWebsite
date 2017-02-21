@@ -29,7 +29,7 @@ $(document).ready(function() {
             type: "POST",
             url: "/strategy_run/",
             dataType: "json",
-            data: { "strategy_content": editor1.getValue(),"position_content": editor2.getValue()  },
+            data: { "strategy_content": editor1.getValue(),"position_content": editor2.getValue() ,"tickers": $('input[name="tickers"]').val()},
             beforeSend: function(){
                 $('#loadingIMG').show();
             },

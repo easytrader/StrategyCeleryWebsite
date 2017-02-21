@@ -93,4 +93,5 @@ def main(config, testing, tickers, filename):
 
 
 if __name__ == "__main__":
-    main(settings.DEFAULT_CONFIG_FILENAME,False,'MMM','')
+    tickers = sys.argv[1]
+    main(settings.DEFAULT_CONFIG_FILENAME,False,tickers,'')
