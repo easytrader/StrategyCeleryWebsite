@@ -19,6 +19,8 @@ import json
 import subprocess
 import os
 
+import datetime
+import urllib2
 """
 index.html's view function
 """
@@ -183,9 +185,9 @@ def strategy_run(request):
         else:
             print("Sorry, I can not remove %s file." % png_file)
 
-        cmd = "python " + os.path.dirname(__file__) + "/../qstrader/strategy_backtest.py %s" % request.POST['tickers'].encode("utf8")
-        #print("cmd")
-        #print(cmd)
+        cmd = "python " + os.path.dirname(__file__) + "/../qstrader/strategy_backtest.py %s %s %s" % (request.POST['tickers'].encode("utf8"),request.POST['begin_date'],request.POST['end_date'])
+        print("cmd")
+        print(cmd)
         p = subprocess.Popen(cmd, stdout=subprocess.PIPE,stderr=subprocess.PIPE, shell=True)
         (output, err) = p.communicate()
         ## Wait for date to terminate. Get return returncode ##

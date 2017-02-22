@@ -29,7 +29,7 @@ print(dir)
 from custom_strategy import CustomStrategy
 from custom_position import CustomPositionSizer
 
-def run(config, testing, tickers, filename):
+def run(config, testing, tickers, filename, start_date, end_date):
 
     # Set up variables needed for backtest
     events_queue = queue.Queue()
@@ -38,7 +38,7 @@ def run(config, testing, tickers, filename):
 
     # Use Yahoo Daily Price Handler
     price_handler = SqliteDBBarPriceHandler(
-        csv_dir, events_queue, tickers
+        csv_dir, events_queue, tickers, start_date, end_date
     )
 
     # Use the Buy and Hold Strategy
@@ -86,12 +86,16 @@ def run(config, testing, tickers, filename):
 @click.option('--tickers', default='SP500TR', help='Tickers (use comma)')
 @click.option('--filename', default='', help='Pickle (.pkl) statistics filename')
 """
-def main(config, testing, tickers, filename):
+def main(config, testing, tickers, filename, start_date=None, end_date=None):
     tickers = tickers.split(",")
     config = settings.from_file(config, testing)
-    run(config, testing, tickers, filename)
+    run(config, testing, tickers, filename, start_date, end_date)
 
 
 if __name__ == "__main__":
     tickers = sys.argv[1]
-    main(settings.DEFAULT_CONFIG_FILENAME,False,tickers,'')
+    print("sys.argv[2]")
+    print(sys.argv[2])
+    print("sys.argv[3]")
+    print(sys.argv[3])
+    main(settings.DEFAULT_CONFIG_FILENAME,False,tickers,'',sys.argv[2],sys.argv[3])

@@ -23,7 +23,7 @@ $(document).ready(function() {
             type: "POST",
             url: "/new_strategy_save/",
             dataType: "json",
-            data: { "strategy_content": editor1.getValue(),"position_content": editor2.getValue(),"name":$(".Strategy-name").val(),"begin_date": begin_date ,"end_date": end_date  },
+            data: { "strategy_content": editor1.getValue(),"position_content": editor2.getValue(),"name":$(".Strategy-name").val()  },
             success: function(data) {
                 //alert(data["name"]);
             }
@@ -34,12 +34,12 @@ $(document).ready(function() {
     $('.run-strategy').click(function(){
       //alert("leo test 1");
       console.log('am i called');
-      //alert("leo test")
+      //alert(begin_date.value)
         $.ajax({
             type: "POST",
             url: "/strategy_run/",
             dataType: "json",
-            data: { "strategy_content": editor1.getValue(),"position_content": editor2.getValue(),"name":$(".Strategy-name").val() ,"tickers": $('input[name="tickers"]').val() },
+            data: { "strategy_content": editor1.getValue(),"position_content": editor2.getValue(),"name":$(".Strategy-name").val() ,"tickers": $('input[name="tickers"]').val(),"begin_date": begin_date.value ,"end_date": end_date.value },
             beforeSend: function(){
                 $('#loadingIMG').show();
             },
