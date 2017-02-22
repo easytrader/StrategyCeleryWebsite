@@ -164,7 +164,7 @@ def strategy_run(request):
 
     if request.method == 'POST' and request.is_ajax():
 
-        if not request.POST['tickers']:
+        if not request.POST['tickers'] or not request.POST['begin_date'] or not request.POST['end_date']:
             print("tickers is None")
             return HttpResponse("", content_type="application/json")
 
