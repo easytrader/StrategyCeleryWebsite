@@ -123,7 +123,7 @@ def strategy_page(request, strategy_id):
 new_strategy_page.html's view function
 """
 def new_strategy(request):
-    return render_to_response('new_strategy.html', locals(), context_instance=RequestContext(request))
+    return render_to_response('new_strategy.html', {})
 
 """
 new_strategy_page.html save strategy's function

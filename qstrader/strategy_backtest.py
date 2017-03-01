@@ -15,7 +15,8 @@ from qstrader.risk_manager.example import ExampleRiskManager
 from qstrader.portfolio_handler import PortfolioHandler
 from qstrader.compliance.example import ExampleCompliance
 from qstrader.execution_handler.ib_simulated import IBSimulatedExecutionHandler
-from qstrader.statistics.simple import SimpleStatistics
+#from qstrader.statistics.simple import SimpleStatistics
+from qstrader.statistics.tearsheet import TearsheetStatistics
 from qstrader.trading_session.backtest import Backtest
 #====================================================
 import os,sys
@@ -66,7 +67,9 @@ def run(config, testing, tickers, filename, start_date, end_date):
     )
 
     # Use the default Statistics
-    statistics = SimpleStatistics(config, portfolio_handler)
+    statistics = TearsheetStatistics(
+        config, portfolio_handler, title=""
+    )
 
     # Set up the backtest
     backtest = Backtest(
