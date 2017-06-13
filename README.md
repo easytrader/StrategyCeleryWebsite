@@ -24,4 +24,6 @@ $ uninstall -- sudo pip uninstall qstrader
 $ install -- sudo python setup.py install
 ```
 *****************************************************************************************************************
-![alt tag](https://github.com/easytrader/StrategyCeleryWebsite/blob/master/website_backtest_result.png)
+![alt tag](https://github.com/easytrader/StrategyCeleryWebsite/blob/master/monthly.png)
+![alt tag](https://github.com/easytrader/StrategyCeleryWebsite/blob/master/monthly_result_1.png)
+![alt tag](https://github.com/easytrader/StrategyCeleryWebsite/blob/master/monthly_result_2.png)
