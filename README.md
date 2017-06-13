@@ -12,6 +12,7 @@ $ sudo pip install celery
 $ sudo pip install celery-with-redis
 $ sudo apt install redis-server
 $ sudo pip install django-celery
+$ sudo pip install apscheduler
 $ cd StrategyCeleryWebsite
 $ python manage.py runserver
 ```
