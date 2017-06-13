@@ -1,0 +1,50 @@
+<!-- index.html (ch09www project) -->
+{% extends "base.html" %}
+{% block title %}分享日記{% endblock %}
+{% block content %}
+<div class='container'>
+    {% for message in messages %}
+    <div class='alert alert-{{message.tags}}'>{{ message }}</div>
+    {% endfor %}
+    <div class='row'>
+        <div class='col-md-12'>
+            <div class='panel panel-default'>
+                <div class='panel-heading' align=center>
+                    <h3>My Strategy</h3>
+                </div>
+            </div>
+            {% load staticfiles %}
+            <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+            <script src="{% static 'js/running_jobs.js' %}" type="text/javascript" charset="utf-8"></script>
+
+
+            <br/>
+            <br/>
+            NOW:  {{today}}
+            <br/>
+            <br/>
+
+            <table width="300" border="1">
+              <tr>
+                <th>Name</th>
+                <th>id</th>
+                <th>Next time</th>
+                <th>Disable</th>
+              </tr>
+            {% for running_job in running_jobs %}
+
+              <tr>
+                <td>{{running_job.name}}</td>
+                <td>{{running_job.id}}</td>
+                <td>{{running_job.next_run_time}}</td>
+                <td><input type="button" value="Del APS" class="del-aps" id="{{running_job.id}}"></td>
+              </tr>
+
+
+            {% endfor %}
+
+            </table>
+
+        </div>
+        {% endblock %}
+

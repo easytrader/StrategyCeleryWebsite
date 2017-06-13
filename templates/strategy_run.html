@@ -14,6 +14,13 @@
                 </div>
             </div>
         {% load staticfiles %}
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="{% static 'js/strategy_run.js' %}" type="text/javascript" charset="utf-8"></script>
+
+        <div align=left>
+        	<button class='btn daily-run'>realtime daily run</button>
+        	<button class='btn daily-del'>delete daily run</button>
+        </div>
         <img src="{% static 'img/backtest_result.png' %}">
             <br>
             <h3>Output</h3>

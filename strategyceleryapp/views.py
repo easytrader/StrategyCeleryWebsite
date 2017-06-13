@@ -217,3 +217,48 @@ def strategy_run(request):
         err = strategy_output.strategy_error
 
         return render_to_response('strategy_run.html', locals())
+
+"""
+running job.html's view function
+"""
+def running_jobs(request):
+    #Strategies = Strategy.objects.all()
+
+    if request.user.is_authenticated():
+        username = request.user.username
+        useremail = request.user.email
+    messages.get_messages(request)
+
+    template = get_template('strategy.html')
+    request_context = RequestContext(request)
+    request_context.push(locals())
+    html = template.render(request_context)
+
+    running_jobs = scheduler.get_jobs()
+    #running_jobs = []
+
+    today = datetime.datetime.now()
+    #return HttpResponse(html)
+    return render_to_response('running_jobs.html', {"running_jobs": running_jobs, "username":username, "today":today},
+                              context_instance=RequestContext(request))
+
+#initial apscheduler
+from apscheduler.schedulers.background import BackgroundScheduler
+from pytz import utc
+from apscheduler.jobstores.sqlalchemy import SQLAlchemyJobStore
+from apscheduler.executors.pool import ThreadPoolExecutor, ProcessPoolExecutor
+
+jobstores = {
+
+    'default': SQLAlchemyJobStore(url='sqlite:///db.sqlite3')
+}
+executors = {
+    'default': ThreadPoolExecutor(20),
+    'processpool': ProcessPoolExecutor(5)
+}
+job_defaults = {
+    'coalesce': False,
+    'max_instances': 3
+}
+scheduler = BackgroundScheduler(jobstores=jobstores, executors=executors, job_defaults=job_defaults, timezone=utc)
+scheduler.start()
