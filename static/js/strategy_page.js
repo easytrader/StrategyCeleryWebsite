@@ -24,10 +24,12 @@ $(document).ready(function() {
     $('.run-strategy').click(function(){
       //alert("leo test 1");
       console.log('am i called');
+      var url = window.location.pathname;
+      var strategy_id = url.substring(url.lastIndexOf('/') + 1);
       //alert("leo test")
         $.ajax({
             type: "POST",
-            url: "/strategy_run/",
+            url: "/strategy_run/"+strategy_id,
             dataType: "json",
             data: { "strategy_content": editor1.getValue(),"position_content": editor2.getValue() ,"tickers": $('input[name="tickers"]').val(),"begin_date": begin_date.value ,"end_date": end_date.value},
             beforeSend: function(){
@@ -38,7 +40,7 @@ $(document).ready(function() {
             },
             success: function (response) {
                  //alert("You will now be redirected.");
-                 window.location = "/strategy_run/";
+                 window.location = "/strategy_run/"+strategy_id;
 
             },
         });

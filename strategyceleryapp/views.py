@@ -148,7 +148,7 @@ def strategy_modify(request):
 strategy_page.html run strategy's button
 """
 @csrf_exempt
-def strategy_run(request):
+def strategy_run(request, strategy_id):
     print("leo test strategy_run")
     if request.user.is_authenticated():
         username = request.user.username
@@ -262,3 +262,32 @@ job_defaults = {
 }
 scheduler = BackgroundScheduler(jobstores=jobstores, executors=executors, job_defaults=job_defaults, timezone=utc)
 scheduler.start()
+
+def job(strategy, userid, start_date):
+    #print("leo test strategy:"+strategy)
+    print("leo test")
+"""
+strategy_page.html daily run strategy's button
+"""
+def daily_run_strategy(request):
+    print("daily_run_strategy")
+
+    strategy = models.Strategy.objects.get(pk=request.POST['strategy_id'])
+    full_id = request.user.username + strategy.strategy_name
+    print("full_id: "+full_id)
+    today = datetime.date.today()
+    one_month_ago = datetime.date.today() - datetime.timedelta(days=60)
+    #scheduler.add_job(job, 'interval', id=full_id, args=[strategy,'world'], seconds=30)
+    scheduler.add_job(job, 'cron', id=full_id, args=[strategy, request.user.id, one_month_ago], day_of_week='0-5', hour='9', minute='31')
+    return HttpResponse("", content_type='application/json')
+
+"""
+strategy_page.html delete daily run strategy's button
+"""
+def del_daily_run_strategy(request):
+    print("del daily_run_strategy")
+    strategy = models.Strategy.objects.get(pk=request.POST['strategy_id'])
+    full_id = request.user.username + strategy.strategy_name
+    print("full_id: " + full_id)
+    scheduler.remove_job(full_id)
+    return HttpResponse("", content_type='application/json')

@@ -30,5 +30,5 @@ urlpatterns = [
     url(r'^new_strategy/$', new_strategy),
     url(r'^new_strategy_save/$', new_strategy_save),
     url(r'^strategy_modify/$', strategy_modify),
-    url(r'^strategy_run/$', strategy_run),
+    url(r'^strategy_run/(?P<strategy_id>[0-9]+)', strategy_run, name="strategy_run"),
 ]
