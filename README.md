@@ -28,3 +28,6 @@ $ install -- sudo python setup.py install
 ![alt tag](https://github.com/easytrader/StrategyCeleryWebsite/blob/master/monthly.png)
 ![alt tag](https://github.com/easytrader/StrategyCeleryWebsite/blob/master/monthly_result_1.png)
 ![alt tag](https://github.com/easytrader/StrategyCeleryWebsite/blob/master/monthly_result_2.png)
+*****************************************************************************************************************
+
+20170614- add new feature, running specific strategy on specific time everyday. It can be added jobs on the fly.
