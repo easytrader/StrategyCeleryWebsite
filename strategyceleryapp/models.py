@@ -17,6 +17,10 @@ class Strategy(models.Model):
     strategy_name = models.CharField(max_length=20)
     strategy = models.TextField()
     position = models.TextField()
+    tickers = models.TextField(default="")
+
+    class Meta:
+        unique_together = ("user", "strategy_name")
 
 class strategy_output(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)

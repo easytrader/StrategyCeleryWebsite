@@ -21,6 +21,8 @@ import os
 
 import datetime
 import urllib2
+import  threading
+
 """
 index.html's view function
 """
@@ -263,9 +265,70 @@ job_defaults = {
 scheduler = BackgroundScheduler(jobstores=jobstores, executors=executors, job_defaults=job_defaults, timezone=utc)
 scheduler.start()
 
+
+lock = threading.Lock()
+
 def job(strategy, userid, start_date):
     #print("leo test strategy:"+strategy)
-    print("leo test")
+    lock.acquire()
+    print("===================leo test job start==========================")
+    # ====================================
+
+    f = open(os.path.dirname(__file__) + "/../qstrader/custom_strategy.py", 'w')
+    f.write(strategy.strategy)
+    f.close()
+
+    f = open(os.path.dirname(__file__) + "/../qstrader/custom_position.py", 'w')
+    f.write(strategy.position)
+    f.close()
+
+    png_file = os.path.dirname(__file__) + "/../static/img/backtest_result.png"
+
+    ## delete only if file exists ##
+    if os.path.exists(png_file):
+        os.remove(png_file)
+    else:
+        print("Sorry, I can not remove %s file." % png_file)
+
+    input_tickers = strategy.tickers.encode("utf8")
+
+    today = datetime.date.today()
+    # print("today:"+today)
+
+    cmd = "python " + os.path.dirname(__file__) + "/../qstrader/strategy_backtest.py %s %d %s %s %s" % (
+        input_tickers, userid, strategy.strategy_name, start_date, today)
+    print("cmd")
+    print(cmd)
+    p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
+    (output, err) = p.communicate()
+    ## Wait for date to terminate. Get return returncode ##
+    p_status = p.wait()
+    print "Command output : ", output
+    print "Command exit status/return code : ", p_status
+    print "Command err : ", err
+
+    # ====================================
+    # ===========================================================
+
+    # ===========================================================
+
+    strategy_output = models.strategy_output.objects.filter(user_id=userid,
+                                                            strategy_name=strategy.strategy_name)
+
+    print("leo test strategy_output:")
+
+    if not strategy_output.exists():
+        # print("strategy_output is empty")
+        models.strategy_output.objects.create(strategy_output=output, strategy_name=strategy.strategy_name,
+                                              strategy_error=err, user_id=userid)
+    else:
+        # print("strategy_output is not empty")
+        models.strategy_output.objects.filter(user_id=userid, strategy_name=strategy.strategy_name).update(
+            strategy_output=output, strategy_error=err, mod_date=datetime.datetime.now())
+    # ============================================================================
+    print("===================leo test job end==========================")
+    lock.release()
+
 """
 strategy_page.html daily run strategy's button
 """
@@ -278,7 +341,7 @@ def daily_run_strategy(request):
     today = datetime.date.today()
     one_month_ago = datetime.date.today() - datetime.timedelta(days=60)
     #scheduler.add_job(job, 'interval', id=full_id, args=[strategy,'world'], seconds=30)
-    scheduler.add_job(job, 'cron', id=full_id, args=[strategy, request.user.id, one_month_ago], day_of_week='0-5', hour='9', minute='31')
+    scheduler.add_job(job, 'cron', id=full_id, args=[strategy, request.user.id, one_month_ago], day_of_week='0-5', hour='6', minute='30')
     return HttpResponse("", content_type='application/json')
 
 """
