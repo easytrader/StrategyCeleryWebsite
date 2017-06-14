@@ -16,7 +16,7 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from strategyceleryapp.views import index,login,logout,strategy,new_strategy,strategy_page,strategy_del,new_strategy_save,strategy_modify,strategy_run
-from strategyceleryapp.views import running_jobs
+from strategyceleryapp.views import running_jobs,daily_run_strategy,del_daily_run_strategy,aps_del
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -31,4 +31,7 @@ urlpatterns = [
     url(r'^new_strategy_save/$', new_strategy_save),
     url(r'^strategy_modify/$', strategy_modify),
     url(r'^strategy_run/(?P<strategy_id>[0-9]+)', strategy_run, name="strategy_run"),
+    url(r'^daily_run_strategy/$', daily_run_strategy),
+    url(r'^del_daily_run_strategy/$', del_daily_run_strategy),
+    url(r'^aps/del/', aps_del),
 ]

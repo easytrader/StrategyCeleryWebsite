@@ -291,3 +291,18 @@ def del_daily_run_strategy(request):
     print("full_id: " + full_id)
     scheduler.remove_job(full_id)
     return HttpResponse("", content_type='application/json')
+
+@csrf_exempt
+def aps_del(request):
+    #print("leo test in aps del")
+
+    if request.is_ajax():
+        print("leo test in aps del")
+        if request.POST.get('job-id') is not None:
+            #print("job del:"+request.POST.get('job-id'))
+            jobid = request.POST.get('job-id')
+            scheduler.remove_job(jobid)
+
+        return HttpResponse(json.dumps({'name': ""}), content_type="application/json")
+    else:
+        raise Http404
